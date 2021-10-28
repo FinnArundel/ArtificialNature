@@ -1,0 +1,93 @@
+@font-face {
+font-family: Cirrus;
+src: url('data/CirrusCumulus.woff');
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    overflow-x: auto;
+
+}
+
+.section{
+    /* min-width: 16%; */
+    height: 100vh;
+    border-top: none;
+    border-right: 2px solid black;
+    overflow-y: auto;
+    flex: 1;
+
+    /* transition: min-width 0.1s; */
+    transition: 0.1s;
+    transition-timing-function: ease-in-out;
+     
+    padding-left: 12px;
+    padding-right: 12px;
+
+    font-family: 'IBM Plex Mono', monospace;
+    /* font-size: 90%; */
+    font-size: 0.5vw
+
+}
+
+.section:hover{  
+    flex: 8;
+    font-size: 1vw;
+    padding-left: 24px;
+    padding-right: 24px;
+    /* min-width:32%; */
+
+    
+}
+
+a {
+    color: blue;
+    font-style: italic;
+}
+
+img {
+    filter: grayscale(100%);
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+img:hover{
+    filter: grayscale(0%);
+}
+
+.section::-webkit-scrollbar {
+    display: none;
+}
+
+.wrapper::-webkit-scrollbar {
+    height: 1.5vh;
+    background: rgb(240, 240, 240);
+    border-top: 1px solid rgb(175, 175, 175);
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: rgb(175, 175, 175);
+    
+   
+}
+
+
+
+h1{
+    font-size: 300%;
+    font-family: Cirrus;
+    text-align: center;
+    color: blue;
+}
