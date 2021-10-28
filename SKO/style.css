@@ -21,7 +21,7 @@ html, body {
     /* min-width: 16%; */
     height: 100vh;
     border-top: none;
-    border-right: 2px solid black;
+    border-right: 1px solid black;
     overflow-y: auto;
     flex: 1;
 
